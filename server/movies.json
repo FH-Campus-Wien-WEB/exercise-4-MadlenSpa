@@ -79,6 +79,104 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BY2RiOTM0ZDgtNDRlMi00MDMzLWI1NDYtY2NjZDM4YTkwNWVlXkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 67,
       "imdbRating": 6.9
+    },
+    "tt1375666": {
+      "imdbID": "tt1375666",
+      "Title": "Inception",
+      "Released": "2010-07-15",
+      "Runtime": 148,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "Directors": [
+        "Christopher Nolan"
+      ],
+      "Writers": [
+        "Christopher Nolan"
+      ],
+      "Actors": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Elliot Page"
+      ],
+      "Plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO, but his tragic past may doom the project and his team to disaster.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 74,
+      "imdbRating": 8.8
+    },
+    "tt1790736": {
+      "imdbID": "tt1790736",
+      "Title": "Inception: Motion Comics",
+      "Released": "2010-12-06",
+      "Runtime": 14,
+      "Genres": [
+        "Short",
+        "Action"
+      ],
+      "Directors": [
+        "N/A"
+      ],
+      "Writers": [
+        "N/A"
+      ],
+      "Actors": [
+        "N/A"
+      ],
+      "Plot": "The prequel to \"Inception\" follows Cobb and Arthur as they are assigned and must work through an important extraction, The Cobol Job.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNGRkYzkzZmEtY2YwYi00ZTlmLTgyMTctODE0NTNhNTVkZGIxXkEyXkFqcGdeQXVyNjE4MDMwMjk@._V1_SX300.jpg",
+      "Metascore": 0,
+      "imdbRating": 7.5
+    },
+    "tt7321322": {
+      "imdbID": "tt7321322",
+      "Title": "Inception",
+      "Released": "2014-02-11",
+      "Runtime": 11,
+      "Genres": [
+        "Short",
+        "Drama",
+        "Mystery"
+      ],
+      "Directors": [
+        "Danial Hajibarat"
+      ],
+      "Writers": [
+        "Danial Hajibarat"
+      ],
+      "Actors": [
+        "Erfan Refahatnia",
+        "Danial Hajibarat",
+        "Shahrzad Nouri"
+      ],
+      "Plot": "Young man (Erfan) wants to do something important,It has a lot of risk for him But he must make a decision,Though everyone around them opposes doing so,The boy decides that.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOTY3OGFlNTktYTJiZi00ZWMxLTk4MjQtNmJiODkxYThiNjg4XkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 0,
+      "imdbRating": 8.9
+    },
+    "tt7926130": {
+      "imdbID": "tt7926130",
+      "Title": "Cyberalien: Inception",
+      "Released": "2017-06-06",
+      "Runtime": 4,
+      "Genres": [
+        "Short",
+        "Sci-Fi"
+      ],
+      "Directors": [
+        "Viktor Acidhouse"
+      ],
+      "Writers": [
+        "Vladislav Averbakh"
+      ],
+      "Actors": [
+        "Viktor Acidhouse"
+      ],
+      "Plot": "N/A",
+      "Poster": "N/A",
+      "Metascore": 0,
+      "imdbRating": 1
     }
   },
   "jane": {

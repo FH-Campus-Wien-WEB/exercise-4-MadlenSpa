@@ -1,6 +1,5 @@
 import { ButtonBuilder, ElementBuilder, MovieBuilder } from "./builders.js";
 
-// Externalized message strings
 const messages = {
   dataLoadError: 'Daten konnten nicht geladen werden, Status',
   movieAlreadyInCollection: 'Film bereits in der Sammlung.',
@@ -67,8 +66,6 @@ function loadMovies(genre) {
   fetch(url)
     .then(response => {
       removeMovies();
-      const mainElement = document.querySelector("main");
-
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     })
@@ -87,9 +84,8 @@ function addMovie(imdbID) {
   fetch(`/movies/${imdbID}`, { method: 'PUT' })
     .then(response => {
       if (response.status === 201) {
-        // Task 2.2: Make sure to remove the added movie from the search results to avoid
-        // giving the user the option to add it again.
-    
+        const entry = document.getElementById("result-" + imdbID);
+        if (entry) entry.remove();
         loadMovies();
         updateGenres();
       } else if (response.status === 200) {
@@ -133,10 +129,25 @@ function searchMovies(query) {
       const resultsDiv = document.getElementById("searchResults");
       resultsDiv.innerHTML = '';
 
-      // Task 2.2: Render the results returned from the server. Make sure to
-      // include an "Add" button for each result that calls `addMovie(imdbID)` when clicked.
-      // There is a second part to this task, in `addMovie`
+      if (results.length === 0) {
+        new ElementBuilder("p").text(messages.noResultsFound).appendTo(resultsDiv);
+        return;
+      }
 
+      for (const movie of results) {
+        const entry = document.createElement("div");
+        entry.id = "result-" + movie.imdbID;
+
+        const title = document.createElement("span");
+        title.textContent = `${movie.Title} (${movie.Year})`;
+
+        const addBtn = document.createElement("button");
+        addBtn.textContent = "Add";
+        addBtn.onclick = () => addMovie(movie.imdbID);
+
+        entry.append(title, addBtn);
+        resultsDiv.append(entry);
+      }
     })
     .catch(error => {
       console.error('Search failed:', error);
@@ -146,7 +157,6 @@ function searchMovies(query) {
 }
 
 window.onload = function () {
-  // Check session
   fetch("/session")
     .then(response => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -165,9 +175,15 @@ window.onload = function () {
   function renderUserGreeting() {
     const greetingElement = document.getElementById('userGreeting');
     if (currentSession) {
-      // Task 1.2: Render a user greeting to `#userGreeting` 
-      // using `firstName`, `lastName`, and the server-provided
-      // login timestamp.
+      const loginDate = new Date(currentSession.loginTime);
+      const dateStr = loginDate.toLocaleDateString('de-AT', {
+        day: 'numeric', month: 'long', year: 'numeric'
+      });
+      const timeStr = loginDate.toLocaleTimeString('de-AT', {
+        hour: '2-digit', minute: '2-digit'
+      });
+      greetingElement.textContent =
+        `Hi ${currentSession.firstName} ${currentSession.lastName}, du hast dich am ${dateStr} um ${timeStr} angemeldet.`;
     } else {
       greetingElement.textContent = messages.loggedOutGreeting;
     }
@@ -211,12 +227,31 @@ window.onload = function () {
   document.getElementById('loginForm').addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
+    const username = formData.get('username');
+    const password = formData.get('password');
 
-    // Task 1.1: Implement the login submit flow to call `POST /login` 
-    // with username and password, handle errors, save the response 
-    // into `currentSession`, then call `updateUI()` and `loadMovies()`.
-
-  });
+    fetch('/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    })
+      .then(response => {
+        if (!response.ok) {
+          alert(messages.loginFailed);
+          return;
+        }
+        return response.json().then(data => {
+          currentSession = data;
+          document.getElementById('loginDialog').close();
+          updateUI();
+          loadMovies();
+        });
+      })
+      .catch(error => {
+        console.error('Login failed:', error);
+        alert(messages.loginFailed);
+      });
+  }); // <-- this was missing!
 
   document.getElementById('cancelLogin').addEventListener('click', () => {
     document.getElementById('loginDialog').close();
@@ -240,4 +275,3 @@ window.onload = function () {
     document.getElementById('searchDialog').close();
   });
 };
-
