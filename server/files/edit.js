@@ -1,5 +1,5 @@
 function setMovie(movie) {
-
+  // Fill the edit form with the selected movie's current values.
   for (const element of document.forms[0].elements) {
     const name = element.id;
     const value = movie[name];
@@ -17,6 +17,7 @@ function setMovie(movie) {
 }
 
 function getMovie() {
+  // Convert the edit form fields back into a movie object.
   const movie = {};
 
   const elements = Array.from(document.forms[0].elements).filter(element => element.id)
@@ -50,6 +51,7 @@ function getMovie() {
 }
 
 function putMovie() {
+  // Send the edited movie back to the server.
   const movie = getMovie();
 
   const xhr = new XMLHttpRequest()
@@ -68,7 +70,7 @@ function putMovie() {
 
 }
 
-/** Loading and setting the movie data for the movie with the passed imdbID */
+// Load the movie named in the page URL and show it in the form.
 const imdbID = new URLSearchParams(window.location.search).get("imdbID");
 
 const xhr = new XMLHttpRequest();

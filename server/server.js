@@ -9,10 +9,10 @@ const userModel = require("./user-model.js");
 
 const app = express();
 
-// Parse urlencoded bodies
+// Accept JSON request bodies from the client.
 app.use(bodyParser.json());
 
-// Session middleware
+// Store the logged-in user between requests.
 app.use(session({
   secret: config.sessionSecret,
   resave: true,
@@ -20,9 +20,10 @@ app.use(session({
   cookie: { secure: false } // Set to true if using HTTPS
 }));
 
-// Serve static content in directory 'files'
+// Serve the browser files from the public app folder.
 app.use(express.static(path.join(__dirname, "files")));
 
+// Check submitted credentials and create a session for valid users.
 app.post("/login", function (req, res) {
   const { username, password } = req.body;
   const user = userModel[username];
@@ -39,10 +40,7 @@ app.post("/login", function (req, res) {
   }
 });
 
-// Task 1.3: Implement the GET `/logout` endpoint and requireLogin
-// protection. Implement logout by destroying the session 
-// with error handling. Protect all endpoints that need 
-// authentication with `requireLogin`.
+// Block protected routes when no user is logged in.
 function requireLogin(req, res, next) {
   if (req.session.user) {
     next();
@@ -51,6 +49,7 @@ function requireLogin(req, res, next) {
   }
 }
 
+// End the current session.
 app.get("/logout", function (req, res) {
   req.session.destroy(function (err) {
     if (err) {
@@ -61,6 +60,7 @@ app.get("/logout", function (req, res) {
   });
 });
 
+// Let the client restore the UI when a session already exists.
 app.get("/session", function (req, res) {
   if (req.session.user) {
     res.send(req.session.user);
@@ -69,6 +69,7 @@ app.get("/session", function (req, res) {
   }
 });
 
+// Return the current user's movies, optionally filtered by genre.
 app.get("/movies", requireLogin, function (req, res) {
   const username = req.session.user.username;
   let movies = Object.values(movieModel.getUserMovies(username));
@@ -79,7 +80,7 @@ app.get("/movies", requireLogin, function (req, res) {
   res.send(movies);
 });
 
-// Configure a 'get' endpoint for a specific movie
+// Return one movie from the current user's collection.
 app.get("/movies/:imdbID", requireLogin, function (req, res) {
   const username = req.session.user.username;
   const id = req.params.imdbID;
@@ -92,7 +93,7 @@ app.get("/movies/:imdbID", requireLogin, function (req, res) {
   }
 });
 
-// Configure a 'put' endpoint for a specific movie to update or insert a movie
+// Add a movie from OMDb or update an existing movie in the user's collection.
 app.put("/movies/:imdbID", requireLogin, function (req, res) {
   const username = req.session.user.username;
   const imdbID = req.params.imdbID;
@@ -141,6 +142,7 @@ app.put("/movies/:imdbID", requireLogin, function (req, res) {
   }
 });
 
+// Remove one movie from the user's collection.
 app.delete("/movies/:imdbID", requireLogin, function (req, res) {
   const username = req.session.user.username;
   const id = req.params.imdbID;
@@ -151,7 +153,7 @@ app.delete("/movies/:imdbID", requireLogin, function (req, res) {
   }
 });
 
-// Configure a 'get' endpoint for genres of all movies of the current user
+// Return the unique genres available in the user's collection.
 app.get("/genres", requireLogin, function (req, res) {
   const username = req.session.user.username;
   const genres = movieModel.getGenres(username);
@@ -159,9 +161,7 @@ app.get("/genres", requireLogin, function (req, res) {
   res.send(genres);
 });
 
-/* Task 2.1. Add the GET /search endpoint: Query omdbapi.com and return
-   a list of the results you obtain. Only include the properties 
-   mentioned in the README when sending back the results to the client. */
+// Search OMDb and hide movies that are already in the user's collection.
 app.get("/search", requireLogin, function (req, res) {
   const username = req.session.user.username;
   const query = req.query.query;
