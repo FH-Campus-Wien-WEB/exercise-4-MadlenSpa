@@ -3,56 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies!</title>
+    <title>Movies</title>
     <link rel="stylesheet" href="index.css" />
     <script type="module" src="index.js"></script>
   </head>
 
   <body>
     <header>
-      <h1>Movies!</h1>
+      <button id="menuOpenBtn" class="menu-open" type="button" aria-label="Open menu" aria-controls="sideMenu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <h1>Movie Shelf</h1>
     </header>
     <div id="userGreeting" class="user-greeting" role="status" aria-live="polite"></div>
-    <nav>
-      <h2>Genres</h2>
-      <ul id="filter"></ul>
-      <h2>Manage</h2>
-      <ul>
-        <li>
-          <button id="addMoviesBtn">Add movies</button>
-        </li>
-        <li>
-          <button id="authBtn">Login</button>
-        </li>
-      </ul>
+    <div id="logoutBackdrop" class="logout-backdrop" aria-hidden="true"></div>
+    <section id="loggedOutHero" class="logged-out-hero" aria-hidden="true"></section>
+    <div id="menuOverlay" class="menu-overlay"></div>
+    <nav id="sideMenu" aria-label="Movie navigation">
+      <button id="menuCloseBtn" class="menu-close" type="button" aria-label="Close menu">X</button>
+      <section class="menu-section">
+        <h2>Genres</h2>
+        <ul id="filter"></ul>
+      </section>
+      <section id="movieToolsSection" class="menu-section movie-tools-section">
+        <h2>Movies</h2>
+        <form id="titleSearchForm" class="title-search">
+          <label for="titleSearch" class="visually-hidden">Find movies</label>
+          <div class="search-input-wrap">
+            <input type="search" id="titleSearch" name="titleSearch" placeholder="Search your movies" />
+            <button type="button" id="clearTitleSearch" class="input-clear title-input-clear" aria-label="Clear movie filter">x</button>
+          </div>
+        </form>
+        <ul>
+          <li>
+            <button id="addMoviesBtn">Add movies</button>
+          </li>
+        </ul>
+      </section>
+      <section class="menu-section account-section">
+        <h2>Account</h2>
+        <ul>
+          <li>
+            <button id="authBtn">Login</button>
+          </li>
+        </ul>
+      </section>
     </nav>
-    <main></main>
+    <main>
+      <div id="filterSummary" class="filter-summary"></div>
+      <section id="movieGrid" class="movie-grid"></section>
+    </main>
     <footer>
-      <p>&copy; Movies! &#8213; Written by Madlen Sparr</p>
-      <p class="footer-note">Powered by popcorn, plot twists, and suspiciously long watchlists.</p>
+      <p>&copy; Movie Shelf &#8213; by Mads</p>
+      <p class="footer-note">Powered by popcorn, plot twists, and endless watchlists</p>
     </footer>
 
-    <!-- Login Dialog -->
-    <dialog id="loginDialog">
-      <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
-        <button type="button" id="cancelLogin">Cancel</button>
+    <dialog id="loginDialog" class="app-dialog">
+      <form id="loginForm" class="dialog-form">
+        <div class="dialog-heading">
+          <h2>Welcome back</h2>
+          <p>Log in to open your movie collection.</p>
+        </div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required autocomplete="username" />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password" />
+        <div class="dialog-actions">
+          <button type="submit">Login</button>
+          <button type="button" id="cancelLogin" class="secondary-button">Cancel</button>
+        </div>
       </form>
     </dialog>
 
-    <!-- Search Dialog -->
-    <dialog id="searchDialog">
-      <form id="searchForm">
-        <label for="query">Search for a movie:</label>
-        <input type="text" id="query" name="query" required placeholder="e.g. Inception" />
-        <button type="submit">Search</button>
-        <button type="button" id="cancelSearch">Cancel</button>
+    <dialog id="searchDialog" class="app-dialog search-dialog">
+      <button type="button" id="closeSearchDialog" class="dialog-close" aria-label="Close search">X</button>
+      <form id="searchForm" class="dialog-form">
+        <div class="dialog-heading">
+          <h2>Add a movie</h2>
+        </div>
+        <label for="query">Movie title</label>
+        <div class="search-input-wrap">
+          <input type="text" id="query" name="query" required placeholder="e.g. Inception" />
+          <button type="button" id="clearSearchQuery" class="input-clear">Clear</button>
+        </div>
       </form>
       <div id="searchResults"></div>
+    </dialog>
+
+    <dialog id="editDialog" class="app-dialog edit-dialog">
+      <button type="button" id="closeEditDialog" class="dialog-close" aria-label="Close edit form">X</button>
+      <form id="editForm" class="dialog-form edit-form">
+        <div class="dialog-heading">
+          <h2>Edit movie</h2>
+        </div>
+        <input type="hidden" id="edit-imdbID" />
+        <div><label for="edit-Title">Title</label><input type="text" id="edit-Title" /></div>
+        <div><label for="edit-Released">Released On</label><input type="date" id="edit-Released" /></div>
+        <div><label for="edit-Runtime">Runtime</label><input type="number" id="edit-Runtime" min="0" /></div>
+        <div><label for="edit-Plot">Plot</label><textarea rows="5" id="edit-Plot"></textarea></div>
+        <div><label for="edit-Poster">Poster URL</label><input type="url" id="edit-Poster" /></div>
+        <div><label for="edit-Metascore">Metascore</label><input type="number" id="edit-Metascore" min="0" max="100" /></div>
+        <div><label for="edit-imdbRating">IMDb Rating</label><input type="number" id="edit-imdbRating" min="0" max="10" step="0.1" /></div>
+        <div>
+          <label for="edit-Genres">Genres</label>
+          <select id="edit-Genres" multiple>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Animation">Animation</option>
+            <option value="Biography">Biography</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Crime">Crime</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Drama">Drama</option>
+            <option value="Family">Family</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Film Noir">Film Noir</option>
+            <option value="History">History</option>
+            <option value="Horror">Horror</option>
+            <option value="Music">Music</option>
+            <option value="Musical">Musical</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Romance">Romance</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Short Film">Short Film</option>
+            <option value="Sport">Sport</option>
+            <option value="Superhero">Superhero</option>
+            <option value="Thriller">Thriller</option>
+            <option value="War">War</option>
+            <option value="Western">Western</option>
+          </select>
+        </div>
+        <div><label for="edit-Directors">Directors</label><input type="text" id="edit-Directors" /></div>
+        <div><label for="edit-Writers">Writers</label><input type="text" id="edit-Writers" /></div>
+        <div><label for="edit-Actors">Actors</label><input type="text" id="edit-Actors" /></div>
+        <div class="dialog-actions">
+          <button type="submit">Save</button>
+        </div>
+      </form>
     </dialog>
     
   </body>

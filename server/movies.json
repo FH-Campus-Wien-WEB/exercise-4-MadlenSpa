@@ -5,24 +5,50 @@
       "Title": "Avatar",
       "Released": "2009-12-18",
       "Runtime": 162,
-      "Genres": ["Action", "Adventure", "Fantasy"],
-      "Directors": ["James Cameron"],
-      "Writers": ["James Cameron"],
-      "Actors": ["Sam Worthington", "Zoe Saldaña", "Sigourney Weaver"],
       "Plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 83,
-      "imdbRating": 7.9
+      "imdbRating": 7.9,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "Directors": [
+        "James Cameron"
+      ],
+      "Writers": [
+        "James Cameron"
+      ],
+      "Actors": [
+        "Sam Worthington",
+        "Zoe Saldaña",
+        "Sigourney Weaver"
+      ]
     },
     "tt0120737": {
       "imdbID": "tt0120737",
       "Title": "The Lord of the Rings: The Fellowship of the Ring",
       "Released": "2001-12-19",
       "Runtime": 178,
-      "Genres": ["Adventure", "Drama", "Fantasy"],
-      "Directors": ["Peter Jackson"],
-      "Writers": ["J.R.R. Tolkien", "Fran Walsh", "Philippa Boyens"],
-      "Actors": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
+      "Genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "Directors": [
+        "Peter Jackson"
+      ],
+      "Writers": [
+        "J.R.R. Tolkien",
+        "Fran Walsh",
+        "Philippa Boyens"
+      ],
+      "Actors": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Orlando Bloom"
+      ],
       "Plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
       "Poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 92,
@@ -33,10 +59,22 @@
       "Title": "Sinners",
       "Released": "2025-04-18",
       "Runtime": 137,
-      "Genres": ["Action", "Drama", "Horror"],
-      "Directors": ["Ryan Coogler"],
-      "Writers": ["Ryan Coogler"],
-      "Actors": ["Michael B. Jordan", "Jack O'Connell", "Hailee Steinfeld"],
+      "Genres": [
+        "Action",
+        "Drama",
+        "Horror"
+      ],
+      "Directors": [
+        "Ryan Coogler"
+      ],
+      "Writers": [
+        "Ryan Coogler"
+      ],
+      "Actors": [
+        "Michael B. Jordan",
+        "Jack O'Connell",
+        "Hailee Steinfeld"
+      ],
       "Plot": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
       "Poster": "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 84,
@@ -47,14 +85,680 @@
       "Title": "Spirited Away",
       "Released": "2003-03-28",
       "Runtime": 124,
-      "Genres": ["Animation", "Adventure", "Family"],
-      "Directors": ["Hayao Miyazaki"],
-      "Writers": ["Hayao Miyazaki"],
-      "Actors": ["Miyu Irino", "Rumi Hiiragi", "Mari Natsuki"],
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Family"
+      ],
+      "Directors": [
+        "Hayao Miyazaki"
+      ],
+      "Writers": [
+        "Hayao Miyazaki"
+      ],
+      "Actors": [
+        "Miyu Irino",
+        "Rumi Hiiragi",
+        "Mari Natsuki"
+      ],
       "Plot": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, and where humans are changed into beasts.",
       "Poster": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 96,
       "imdbRating": 8.6
+    },
+    "tt6966692": {
+      "imdbID": "tt6966692",
+      "Title": "Green Book",
+      "Released": "2018-11-15",
+      "Runtime": 130,
+      "Genres": [
+        "Biography",
+        "Comedy",
+        "Drama"
+      ],
+      "Directors": [
+        "Peter Farrelly"
+      ],
+      "Writers": [
+        "Nick Vallelonga",
+        "Brian Hayes Currie",
+        "Peter Farrelly"
+      ],
+      "Actors": [
+        "Viggo Mortensen",
+        "Mahershala Ali",
+        "Linda Cardellini"
+      ],
+      "Plot": "A working-class Italian-American bouncer becomes the driver for an African-American classical pianist on a tour of venues through the 1960s American South.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDU5YTNmMmItN2QxNy00OGQ0LTg5MTctNzFmYjEzZjcwN2UwXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+      "Metascore": 69,
+      "imdbRating": 8.2
+    },
+    "tt0110912": {
+      "imdbID": "tt0110912",
+      "Title": "Pulp Fiction",
+      "Released": "1994-10-13",
+      "Runtime": 154,
+      "Genres": [
+        "Crime",
+        "Drama"
+      ],
+      "Directors": [
+        "Quentin Tarantino"
+      ],
+      "Writers": [
+        "Quentin Tarantino",
+        "Roger Avary"
+      ],
+      "Actors": [
+        "John Travolta",
+        "Uma Thurman",
+        "Samuel L. Jackson"
+      ],
+      "Plot": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_QL75_UY562_CR3,0,380,562_.jpg",
+      "Metascore": 95,
+      "imdbRating": 8.8
+    },
+    "tt3281548": {
+      "imdbID": "tt3281548",
+      "Title": "Little Women",
+      "Released": "2019-12-24",
+      "Runtime": 135,
+      "Genres": [
+        "Drama",
+        "Romance"
+      ],
+      "Directors": [
+        "Greta Gerwig"
+      ],
+      "Writers": [
+        "Greta Gerwig",
+        "Louisa May Alcott"
+      ],
+      "Actors": [
+        "Saoirse Ronan",
+        "Emma Watson",
+        "Florence Pugh"
+      ],
+      "Plot": "In 19th century Massachusetts, the March sisters--Meg, Jo, Beth, and Amy--on the threshold of womanhood, go through many ups and downs in life and endeavor to make important decisions about their futures.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMWMzYjNiZWMtMDg4NS00MDgyLTk5MWItOTFmNjg4NzRhZmExXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 91,
+      "imdbRating": 7.8
+    },
+    "tt0147800": {
+      "imdbID": "tt0147800",
+      "Title": "10 Things I Hate About You",
+      "Released": "1999-03-30",
+      "Runtime": 97,
+      "Genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "Directors": [
+        "Gil Junger"
+      ],
+      "Writers": [
+        "Karen McCullah",
+        "Kirsten Smith",
+        "William Shakespeare"
+      ],
+      "Actors": [
+        "Heath Ledger",
+        "Julia Stiles",
+        "Joseph Gordon-Levitt"
+      ],
+      "Plot": "A high-school boy, Cameron, cannot date Bianca until her anti-social older sister, Kat, has a boyfriend. So, Cameron pays a mysterious boy, Patrick, to charm Kat.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOTQwYmRhNGQtODI2Mi00ZTRlLTk0Y2QtY2NkNjE1MGNhNTgwXkEyXkFqcGc@._V1_QL75_UX380_CR0,1,380,562_.jpg",
+      "Metascore": 70,
+      "imdbRating": 7.4
+    },
+    "tt1160419": {
+      "imdbID": "tt1160419",
+      "Title": "Dune: Part One",
+      "Released": "2021-10-21",
+      "Runtime": 155,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Denis Villeneuve"
+      ],
+      "Writers": [
+        "Jon Spaihts",
+        "Denis Villeneuve",
+        "Eric Roth"
+      ],
+      "Actors": [
+        "Timothée Chalamet",
+        "Rebecca Ferguson",
+        "Zendaya"
+      ],
+      "Plot": "Paul Atreides arrives on Arrakis after his father accepts the stewardship of the dangerous planet. However, chaos ensues after a betrayal as forces clash to control melange, a precious resource.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNWIyNmU5MGYtZDZmNi00ZjAwLWJlYjgtZTc0ZGIxMDE4ZGYwXkEyXkFqcGc@._V1_QL75_UY562_CR1,0,380,562_.jpg",
+      "Metascore": 74,
+      "imdbRating": 8
+    },
+    "tt15239678": {
+      "imdbID": "tt15239678",
+      "Title": "Dune: Part Two",
+      "Released": "2024-02-29",
+      "Runtime": 166,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Denis Villeneuve"
+      ],
+      "Writers": [
+        "Denis Villeneuve",
+        "Jon Spaihts",
+        "Frank Herbert"
+      ],
+      "Actors": [
+        "Timothée Chalamet",
+        "Zendaya",
+        "Rebecca Ferguson"
+      ],
+      "Plot": "Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he endeavors to prevent a terrible fu...",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 79,
+      "imdbRating": 8.4
+    },
+    "tt6751668": {
+      "imdbID": "tt6751668",
+      "Title": "Parasite",
+      "Released": "2019-11-07",
+      "Runtime": 132,
+      "Genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "Directors": [
+        "Bong Joon Ho"
+      ],
+      "Writers": [
+        "Bong Joon Ho",
+        "Han Jin-won"
+      ],
+      "Actors": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong"
+      ],
+      "Plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 97,
+      "imdbRating": 8.5
+    },
+    "tt0892769": {
+      "imdbID": "tt0892769",
+      "Title": "How to Train Your Dragon",
+      "Released": "2010-03-25",
+      "Runtime": 98,
+      "Genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "Directors": [
+        "Dean DeBlois",
+        "Chris Sanders"
+      ],
+      "Writers": [
+        "William Davies",
+        "Dean DeBlois",
+        "Chris Sanders"
+      ],
+      "Actors": [
+        "Jay Baruchel",
+        "Gerard Butler",
+        "Christopher Mintz-Plasse"
+      ],
+      "Plot": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_SX300.jpg",
+      "Metascore": 75,
+      "imdbRating": 8.1
+    },
+    "tt0167260": {
+      "imdbID": "tt0167260",
+      "Title": "The Lord of the Rings: The Return of the King",
+      "Released": "2003-12-16",
+      "Runtime": 201,
+      "Genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "Directors": [
+        "Peter Jackson"
+      ],
+      "Writers": [
+        "J.R.R. Tolkien",
+        "Fran Walsh",
+        "Philippa Boyens"
+      ],
+      "Actors": [
+        "Elijah Wood",
+        "Viggo Mortensen",
+        "Ian McKellen"
+      ],
+      "Plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 94,
+      "imdbRating": 9
+    },
+    "tt0167261": {
+      "imdbID": "tt0167261",
+      "Title": "The Lord of the Rings: The Two Towers",
+      "Released": "2002-12-17",
+      "Runtime": 179,
+      "Genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "Directors": [
+        "Peter Jackson"
+      ],
+      "Writers": [
+        "J.R.R. Tolkien",
+        "Fran Walsh",
+        "Philippa Boyens"
+      ],
+      "Actors": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen"
+      ],
+      "Plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_QL75_UX380_CR0,14,380,562_.jpg",
+      "Metascore": 87,
+      "imdbRating": 8.8
+    },
+    "tt0332452": {
+      "imdbID": "tt0332452",
+      "Title": "Troy",
+      "Released": "2004-05-13",
+      "Runtime": 163,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Wolfgang Petersen"
+      ],
+      "Writers": [
+        "Homer",
+        "David Benioff"
+      ],
+      "Actors": [
+        "Brad Pitt",
+        "Eric Bana",
+        "Orlando Bloom"
+      ],
+      "Plot": "An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTk5MzU1MDMwMF5BMl5BanBnXkFtZTcwNjczODMzMw@@._V1_SX300.jpg",
+      "Metascore": 56,
+      "imdbRating": 7.3
+    },
+    "tt0172495": {
+      "imdbID": "tt0172495",
+      "Title": "Gladiator",
+      "Released": "2000-05-04",
+      "Runtime": 155,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Ridley Scott"
+      ],
+      "Writers": [
+        "David Franzoni",
+        "John Logan",
+        "William Nicholson"
+      ],
+      "Actors": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen"
+      ],
+      "Plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 67,
+      "imdbRating": 8.5
+    },
+    "tt0480249": {
+      "imdbID": "tt0480249",
+      "Title": "I Am Legend",
+      "Released": "2007-12-13",
+      "Runtime": 101,
+      "Genres": [
+        "Drama",
+        "Horror",
+        "Sci-Fi"
+      ],
+      "Directors": [
+        "Francis Lawrence"
+      ],
+      "Writers": [
+        "Mark Protosevich",
+        "Akiva Goldsman",
+        "Richard Matheson"
+      ],
+      "Actors": [
+        "Will Smith",
+        "Alice Braga",
+        "Charlie Tahan"
+      ],
+      "Plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMGE1OWZkZmItNmVhMC00YzAxLTgxOTctNjg3NWExM2RmOWJkXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 65,
+      "imdbRating": 7.2
+    },
+    "tt17351924": {
+      "imdbID": "tt17351924",
+      "Title": "Saltburn",
+      "Released": "2023-12-21",
+      "Runtime": 131,
+      "Genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "Directors": [
+        "Emerald Fennell"
+      ],
+      "Writers": [
+        "Emerald Fennell"
+      ],
+      "Actors": [
+        "Barry Keoghan",
+        "Jacob Elordi",
+        "Rosamund Pike"
+      ],
+      "Plot": "A student at Oxford University finds himself drawn into the world of a charming and aristocratic classmate, who invites him to his eccentric family's sprawling estate for a summer never to be forgotten.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZjk4NGE3MWItMDRhMy00YzhiLTk0MGUtZDlkNmQxYWIxYzc2XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 61,
+      "imdbRating": 7
+    },
+    "tt2582846": {
+      "imdbID": "tt2582846",
+      "Title": "The Fault in Our Stars",
+      "Released": "2014-06-05",
+      "Runtime": 126,
+      "Genres": [
+        "Drama",
+        "Romance"
+      ],
+      "Directors": [
+        "Josh Boone"
+      ],
+      "Writers": [
+        "Scott Neustadter",
+        "Michael H. Weber",
+        "John Green"
+      ],
+      "Actors": [
+        "Shailene Woodley",
+        "Ansel Elgort",
+        "Nat Wolff"
+      ],
+      "Plot": "Hazel and Gus are teenagers who meet at a cancer support group and fall in love. They both share the same acerbic wit and a love of books, especially \"An Imperial Affliction\", so they embark on a journey to visit an author in Amst...",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYTA4ODg5YWUtYmZiYy00Y2M4LWE0NjEtODE5MzhkYmJmZGEwXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 69,
+      "imdbRating": 7.6
+    },
+    "tt0431308": {
+      "imdbID": "tt0431308",
+      "Title": "P.S. I Love You",
+      "Released": "2007-12-20",
+      "Runtime": 126,
+      "Genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "Directors": [
+        "Richard LaGravenese"
+      ],
+      "Writers": [
+        "Richard LaGravenese",
+        "Steven Rogers",
+        "Cecelia Ahern"
+      ],
+      "Actors": [
+        "Hilary Swank",
+        "Gerard Butler",
+        "Harry Connick Jr."
+      ],
+      "Plot": "A young widow discovers that her late husband has left her 10 messages intended to help ease her pain and start a new life.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNTg2MDg4MjI5NV5BMl5BanBnXkFtZTcwMzQ0MDczMw@@._V1_SX300.jpg",
+      "Metascore": 39,
+      "imdbRating": 7
+    },
+    "tt1130884": {
+      "imdbID": "tt1130884",
+      "Title": "Shutter Island",
+      "Released": "2010-02-18",
+      "Runtime": 138,
+      "Genres": [
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "Directors": [
+        "Martin Scorsese"
+      ],
+      "Writers": [
+        "Laeta Kalogridis",
+        "Dennis Lehane"
+      ],
+      "Actors": [
+        "Leonardo DiCaprio",
+        "Emily Mortimer",
+        "Mark Ruffalo"
+      ],
+      "Plot": "Two US marshals are sent to a mental institution on an inhospitable island in order to investigate the disappearance of a patient.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 63,
+      "imdbRating": 8.2
+    },
+    "tt0200550": {
+      "imdbID": "tt0200550",
+      "Title": "Coyote Ugly",
+      "Released": "2000-08-03",
+      "Runtime": 100,
+      "Genres": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ],
+      "Directors": [
+        "David McNally"
+      ],
+      "Writers": [
+        "Gina Wendkos"
+      ],
+      "Actors": [
+        "Piper Perabo",
+        "Adam Garcia",
+        "John Goodman"
+      ],
+      "Plot": "Aspiring songwriter Violet Sanford, after getting a job at a women-run NYC bar that teases its male patrons, comes out of her shell.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmM2NDA1ZDQtYTRjNi00NGIwLWJhZmMtM2Q3YjFmZGFjNjZhXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 27,
+      "imdbRating": 5.8
+    },
+    "tt0398286": {
+      "imdbID": "tt0398286",
+      "Title": "Tangled",
+      "Released": "2010-11-23",
+      "Runtime": 100,
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "Directors": [
+        "Nathan Greno",
+        "Byron Howard"
+      ],
+      "Writers": [
+        "Dan Fogelman",
+        "Jacob Grimm",
+        "Wilhelm Grimm"
+      ],
+      "Actors": [
+        "Mandy Moore",
+        "Zachary Levi",
+        "Donna Murphy"
+      ],
+      "Plot": "The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@._V1_SX300.jpg",
+      "Metascore": 71,
+      "imdbRating": 7.7
+    },
+    "tt0166813": {
+      "imdbID": "tt0166813",
+      "Title": "Spirit: Stallion of the Cimarron",
+      "Released": "2002-05-23",
+      "Runtime": 83,
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Kelly Asbury",
+        "Lorna Cook"
+      ],
+      "Writers": [
+        "John Fusco"
+      ],
+      "Actors": [
+        "Matt Damon",
+        "James Cromwell",
+        "Daniel Studi"
+      ],
+      "Plot": "A captured mustang remains determined to return to his herd no matter what.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTgyOTUzNDA1N15BMl5BanBnXkFtZTYwNjgwMDM3._V1_SX300.jpg",
+      "Metascore": 52,
+      "imdbRating": 7.2
+    },
+    "tt3890160": {
+      "imdbID": "tt3890160",
+      "Title": "Baby Driver",
+      "Released": "2017-06-27",
+      "Runtime": 113,
+      "Genres": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "Directors": [
+        "Edgar Wright"
+      ],
+      "Writers": [
+        "Edgar Wright"
+      ],
+      "Actors": [
+        "Ansel Elgort",
+        "Jon Bernthal",
+        "Jon Hamm"
+      ],
+      "Plot": "Coerced into working for a crime boss, a young getaway driver must face the music when a doomed heist threatens his life, love, and freedom.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 86,
+      "imdbRating": 7.5
+    },
+    "tt0414387": {
+      "imdbID": "tt0414387",
+      "Title": "Pride & Prejudice",
+      "Released": "2005-11-22",
+      "Runtime": 129,
+      "Genres": [
+        "Drama",
+        "Romance"
+      ],
+      "Directors": [
+        "Joe Wright"
+      ],
+      "Writers": [
+        "Deborah Moggach",
+        "Jane Austen",
+        "Emma Thompson"
+      ],
+      "Actors": [
+        "Keira Knightley",
+        "Matthew Macfadyen",
+        "Brenda Blethyn"
+      ],
+      "Plot": "When Elizabeth Bennet meets the handsome Mr. Darcy, she believes he is the last man she could ever marry, but as their lives become intertwined, she finds herself captivated by the man she has sworn to hate forever.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE@._V1_SX300.jpg",
+      "Metascore": 82,
+      "imdbRating": 7.8
+    },
+    "tt0993846": {
+      "imdbID": "tt0993846",
+      "Title": "The Wolf of Wall Street",
+      "Released": "2013-12-24",
+      "Runtime": 180,
+      "Genres": [
+        "Biography",
+        "Comedy",
+        "Crime"
+      ],
+      "Directors": [
+        "Martin Scorsese"
+      ],
+      "Writers": [
+        "Terence Winter",
+        "Jordan Belfort"
+      ],
+      "Actors": [
+        "Leonardo DiCaprio",
+        "Jonah Hill",
+        "Margot Robbie"
+      ],
+      "Plot": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "Metascore": 75,
+      "imdbRating": 8.2
+    },
+    "tt0087544": {
+      "imdbID": "tt0087544",
+      "Title": "Nausicaä of the Valley of the Wind",
+      "Released": "1987-11-24",
+      "Runtime": 117,
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "Directors": [
+        "Hayao Miyazaki"
+      ],
+      "Writers": [
+        "Hayao Miyazaki",
+        "Kazunori Itô"
+      ],
+      "Actors": [
+        "Sumi Shimamoto",
+        "Mahito Tsujimura",
+        "Hisako Kyôda"
+      ],
+      "Plot": "Warrior and pacifist Princess Nausicaä desperately struggles to prevent two warring nations from destroying themselves and their dying planet.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODBhMTI3YzMtNTRjYS00OTFkLWJmODUtNjJiNzcwYTVkNDhiXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 86,
+      "imdbRating": 8
     }
   }
 }

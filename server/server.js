@@ -72,10 +72,14 @@ app.get("/session", function (req, res) {
 // Return the current user's movies, optionally filtered by genre.
 app.get("/movies", requireLogin, function (req, res) {
   const username = req.session.user.username;
-  let movies = Object.values(movieModel.getUserMovies(username));
+  let movies = Object.entries(movieModel.getUserMovies(username)).map(([imdbID, movie]) => ({
+    ...movie,
+    imdbID: movie.imdbID || imdbID,
+    collectionId: imdbID
+  }));
   const queriedGenre = req.query.genre;
   if (queriedGenre) {
-    movies = movies.filter((movie) => movie.Genres.indexOf(queriedGenre) >= 0);
+    movies = movies.filter((movie) => (movie.Genres || []).indexOf(queriedGenre) >= 0);
   }
   res.send(movies);
 });
@@ -97,7 +101,8 @@ app.get("/movies/:imdbID", requireLogin, function (req, res) {
 app.put("/movies/:imdbID", requireLogin, function (req, res) {
   const username = req.session.user.username;
   const imdbID = req.params.imdbID;
-  const exists = movieModel.getUserMovie(username, imdbID) !== undefined;
+  const existingMovie = movieModel.getUserMovie(username, imdbID);
+  const exists = existingMovie && existingMovie.imdbID && existingMovie.Title;
 
   if (!exists) {
     const omdbUrl = `http://www.omdbapi.com/?i=${encodeURIComponent(imdbID)}&apikey=${config.omdbApiKey}`;
@@ -191,11 +196,11 @@ app.get("/search", requireLogin, function (req, res) {
 
         if (response.Response === 'True') {
           const results = response.Search
-            .filter(movie => !movieModel.hasUserMovie(username, movie.imdbID))
             .map(movie => ({
               Title: movie.Title,
               imdbID: movie.imdbID,
-              Year: isNaN(movie.Year) ? null : parseInt(movie.Year)
+              Year: isNaN(movie.Year) ? null : parseInt(movie.Year),
+              added: movieModel.hasUserMovie(username, movie.imdbID)
             }));
           res.send(results);
         } else {
